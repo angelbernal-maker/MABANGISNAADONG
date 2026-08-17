@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mabangis na Lungsod | Storybook</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     LOGIN PAGE
+========================= -->
+
+<div id="loginPage" class="login">
+
+  <div class="login-card">
+
+    <img src="cover.png"
+         class="avatar"
+         alt="Book Cover">
+
+    <h1>Mabangis na Lungsod</h1>
+
+    <p class="author">
+      Storybook ni Efren Abueg
+    </p>
+
+    <input
+      type="text"
+      id="name"
+      placeholder="Enter your name"
+    >
+
+    <button onclick="startStory()">
+      LOG IN
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- =========================
+     STORY PAGE
+========================= -->
+
+<div id="storyPage" style="display:none;">
+
+  <!-- HEADER -->
+
+  <header>
+
+    <div class="hero">
+
+      <h1>
+        Mabangis na Lungsod
+      </h1>
+
+      <p>
+        Maligayang pagdating,
+        <span id="user"></span>!
+      </p>
+
+    </div>
+
+  </header>
+
+
+  <!-- =========================
+       HOME / CHAPTER MENU
+  ========================= -->
+
+  <div id="homePage" class="home-page">
+
+    <div class="home-card">
+
+      <h2>📖 Mabangis na Lungsod</h2>
+
+      <p>
+        Piliin ang kabanata na nais mong basahin.
+      </p>
+
+
+      <div class="chapter-list">
+
+        <button onclick="openChapter(1)">
+          Kabanata 1
+        </button>
+
+        <button onclick="openChapter(2)">
+          Kabanata 2
+        </button>
+
+        <button onclick="openChapter(3)">
+          Kabanata 3
+        </button>
+
+        <button onclick="openChapter(4)">
+          Kabanata 4
+        </button>
+
+        <button onclick="openChapter(5)">
+          Kabanata 5
+        </button>
+
+        <button onclick="openChapter(6)">
+          Kabanata 6
+        </button>
+
+        <button onclick="openChapter(7)">
+          Kabanata 7
+        </button>
+
+        <button onclick="openChapter(8)">
+          Kabanata 8
+        </button>
+
+        <button onclick="openChapter(9)">
+          Kabanata 9
+        </button>
+
+        <button onclick="openChapter(10)">
+          Kabanata 10
+        </button>
+
+        <button onclick="openChapter(11)">
+          Kabanata 11
+        </button>
+
+        <button onclick="openChapter(12)">
+          Wakas
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       STORY CONTAINER
+  ========================= -->
+
+  <div id="storyContent" class="container">
+
+
+    <!-- BOOK 1 -->
+
+    <div class="book">
+
+      <div class="page">
+
+        <h2>Kabanata 1</h2>
+
+        <img src="kahirapan.png" alt="Kahirapan">
+
+        <p>
+          Ang mga daing ay walang halaga, waring mga patak ng ulan sa malalaking bitak ng lupa.
+          Ang mga tao'y bantad na sa pagpapalimos ng maraming pulubi.
+          Ang mga tao'y naghihikahos na rin.
+          Ang panahon ay patuloy na ibinuburol ang karukhaan.
+        </p>
+
+      </div>
+
+
+      <div class="page">
+
+        <h2>Kabanata 2</h2>
+
+        <img src="simbahan.png" alt="Simbahan">
+
+        <p>
+          Tumugtog ang kampana ng simbahan.
+          Pagkaraan ng ilang sandali, narinig ni Adong ang pagkilos ng mga tao palabas ng simbahan.
+          Waring nagmamadali ang mga ito, tila ba sa wala pang isang oras na pagkakatigil sa loob ng simbahan ay napapaso at nakararamdam ng hapdi hindi sa katawan, kundi sa kaluluwa.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- BOOK 2 -->
+
+    <div class="book">
+
+      <div class="page">
+
+        <h2>Kabanata 3</h2>
+
+        <img src="adong.png" alt="Adong">
+
+        <p>
+          Natuwa si Adong.
+          Pinagbuti niya ang paglalahad ng kanyang palad at pagtawag sa mga taong papalapit sa kanyang kinaroroonan.
+        </p>
+
+      </div>
+
+
+      <div class="page">
+
+        <h2>Kabanata 4</h2>
+
+        <img src="babala.png" alt="Babala">
+
+        <p>
+          “Malapit nang dumating si Bruno...” ani Aling Ebeng na tila walang partikular na pinatutungkulan, kundi para sa lahat ng maaaring makarinig.
+        </p>
+
+        <p>
+          Biglang napawi ang katuwaan ni Adong.
+          Nararamdaman niyang muling bumalik ang gutom at pangamba na matagal nang bumabalot sa kanyang buhay.
+          Ang takot na sumisigid sa kanyang katawan at nagpapakilabot sa kanya ay tila itinaboy ng isang mahiwagang kamay, ngunit hindi tuluyang nawala.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- BOOK 3 -->
+
+    <div class="book">
+
+      <div class="page">
+
+        <h2>Kabanata 5</h2>
+
+        <img src="galit.png" alt="Galit">
+
+        <p>
+          Habang dumaraan sa kanyang harapan ang mga tao—malalamig ang mukha, walang awa at walang pakialam—nakadarama siya ng matinding sakit at galit.
+          Ilang araw na niyang nararanasan ang ganitong kalagayan, at ang nararamdaman niyang paghihirap ay tila nagtutulak sa kanya na gumawa ng isang marahas na bagay.
+        </p>
+
+      </div>
+
+
+      <div class="page">
+
+        <h2>Kabanata 6</h2>
+
+        <img src="limos.png" alt="Limos">
+
+        <p>
+          Isang singkong barya ang nalaglag sa kanyang palad.
+          Hindi ito inilagay nang maayos ng mga nagbibigay, kundi basta lamang inihulog dahil ayaw nilang madikit ang kanilang mga kamay sa maruruming palad ni Adong.
+        </p>
+
+        <p>
+          Agad niyang inilagay ang mga barya sa kanyang bulsa.
+          Lumikha ito ng bahagyang tunog nang tumama sa iba pang sentimo na naroon.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- BOOK 4 -->
+
+    <div class="book">
+
+      <div class="page">
+
+        <h2>Kabanata 7</h2>
+
+        <img src="bruno.png" alt="Bruno">
+
+        <p>
+          Sa kanyang pagiging abala, hindi niya napansing kakaunti na lamang ang mga taong lumalabas mula sa simbahan.
+          Muli niyang nakita ang mga malamig na mukha, ang pag-iling ng mga kamay na nagpapakita ng pagwawalang-bahala, at ang mga hakbang ng mga taong pilit siyang iniiwasan.
+        </p>
+
+        <p>
+          “Adong, ayun na si Bruno,” narinig niyang sabi ni Aling Ebeng.
+        </p>
+
+        <p>
+          Tinanaw ni Adong ang itinuro ng matanda.
+          Si Bruno nga iyon—malapad ang katawan, namumutok ang mga bisig, at maliit ang ulong natatakpan ng suot na gora.
+        </p>
+
+      </div>
+
+
+      <div class="page">
+
+        <h2>Kabanata 8</h2>
+
+        <img src="desisyon.png" alt="Desisyon">
+
+        <p>
+          Napadukot si Adong sa kanyang bulsa.
+          Dinama niya ang mga barya.
+          Malamig ang mga ito, ngunit hindi sapat ang lamig nito upang mapawi ang apoy ng galit at takot na matagal nang namumuo sa kanyang dibdib.
+        </p>
+
+        <p>
+          Mahigpit niyang kinulong sa kanyang palad ang mga barya.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- BOOK 5 -->
+
+    <div class="book">
+
+      <div class="page">
+
+        <h2>Kabanata 9</h2>
+
+        <img src="kalayaan.png" alt="Kalayaan">
+
+        <p>
+          “Diyan na kayo, Aling Ebeng… sabihin ninyo kay Bruno na wala ako,” mabilis niyang sinabi.
+        </p>
+
+        <p>
+          “Ano? Naloloko ka ba, Adong?
+          Sasaktan ka ni Bruno kapag nakita ka niya!” babala ng matanda.
+        </p>
+
+        <p>
+          Narinig man ni Adong ang sinabi ni Aling Ebeng,
+          nagpatuloy pa rin siya sa paglalakad.
+          Sa una ay marahan lamang, ngunit nang makubli siya sa kabilang bahagi ng bakod ng simbahan ay bigla siyang kumaripas ng takbo.
+        </p>
+
+      </div>
+
+
+      <div class="page">
+
+        <h2>Kabanata 10</h2>
+
+        <img src="pagkahuli.png" alt="Pagkahuli">
+
+        <p>
+          Lumusot siya sa pagitan ng mababagal na dyipni at sumiksik sa mga taong nagsasalubong sa daan.
+          Akala niya ay tuluyan na siyang nakatakas nang makarating siya sa isang maliit na iskinita.
+        </p>
+
+        <p>
+          Sumandal siya sa poste ng ilaw at dinama ang tigas nito sa kanyang likuran.
+          Sa murang isip ni Adong ay naramdaman niya ang isang munting tagumpay—ang tagumpay ng isang batang naghimagsik laban sa gutom, takot, at kalupitang matagal na niyang kinamumuhian.
+        </p>
+
+        <p>
+          Ngunit ang sandaling iyon ng kalayaan ay agad napawi.
+        </p>
+
+        <p>
+          “Adong!”
+          Sinundan iyon ng papalapit na mga yabag.
+          Napahindik si Adong nang marinig ang basag na tinig.
+          Nais niyang tumakbo muli, nais niyang ipagpatuloy ang kanyang pagtakas.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- BOOK 6 -->
+
+    <div class="book">
+
+      <div class="page">
+
+        <h2>Kabanata 11</h2>
+
+        <img src="wakas.png" alt="Wakas">
+
+        <p>
+          Ngunit hindi na siya nakagalaw.
+        </p>
+
+        <p>
+          Ang mga kamay ni Bruno ay parang bakal na humawak sa kanyang bisig.
+          Niluray nito ang maliit na lakas na nagkaroon siya ng tapang upang lumaban sa gutom, pangamba, at paghihirap.
+        </p>
+
+        <p>
+          “Bitawan mo ako, Bruno!
+          Bitawan mo ako!” sigaw ni Adong.
+        </p>
+
+        <p>
+          Ngunit hindi na niya muling narinig ang kanyang sariling tinig.
+          Tanging ang sakit at kabangisang dulot ng malulupit na kamay ni Bruno ang kanyang naramdaman.
+        </p>
+
+        <p>
+          Natutulog ang kanyang mga pandama.
+          Nahilo siya.
+          At pagkaraan ng ilang sandali, hindi na niya naramdaman ang sakit at takot.
+        </p>
+
+        <p>
+          Tanging ang katahimikan na tila biglang kumandong sa kanya ang kanyang nadama.
+        </p>
+
+      </div>
+
+
+      <div class="page end">
+
+        <h2>WAKAS</h2>
+
+        <img src="cover.png" alt="Cover">
+
+        <p>
+          <strong>Mabangis na Lungsod</strong>
+        </p>
+
+        <p>
+          ni Efren Abueg
+        </p>
+
+        <p>
+          (Abueg, 2009)
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =========================
+       NAVIGATION
+  ========================= -->
+
+  <div id="navigation" class="navigation">
+
+    <button onclick="goHome()">
+      🏠 Home
+    </button>
+
+    <button id="prevBtn" onclick="prevBook()">
+      ◀ Previous
+    </button>
+
+    <span id="pageNumber">
+      1 / 6
+    </span>
+
+    <button id="nextBtn" onclick="nextBook()">
+      Next ▶
+    </button>
+
+  </div>
+
+
+  <!-- FOOTER -->
+
+  <footer>
+    Mabangis na Lungsod • Storybook Edition
+  </footer>
+
+</div>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+let currentPage = 1;
+
+const totalPages = 6;
+
+
+/* =========================
+   LOGIN
+========================= */
+
+function startStory() {
+
+  const pangalan =
+    document.getElementById("name").value.trim();
+
+  if (pangalan === "") {
+
+    alert("Maglagay muna ng pangalan!");
+
+    return;
+  }
+
+  document.getElementById("user").textContent =
+    pangalan;
+
+  document.getElementById("loginPage").style.display =
+    "none";
+
+  document.getElementById("storyPage").style.display =
+    "block";
+
+  goHome();
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+function goHome() {
+
+  document.getElementById("homePage").style.display =
+    "block";
+
+  document.getElementById("storyContent").style.display =
+    "none";
+
+  document.getElementById("navigation").style.display =
+    "none";
+
+  window.scrollTo(0, 0);
+}
+
+
+/* =========================
+   OPEN CHAPTER
+========================= */
+
+function openChapter(chapter) {
+
+  currentPage = Math.ceil(chapter / 2);
+
+  document.getElementById("homePage").style.display =
+    "none";
+
+  document.getElementById("storyContent").style.display =
+    "block";
+
+  document.getElementById("navigation").style.display =
+    "flex";
+
+  updateBook();
+
+  window.scrollTo(0, 0);
+}
+
+
+/* =========================
+   NEXT
+========================= */
+
+function nextBook() {
+
+  if (currentPage < totalPages) {
+
+    currentPage++;
+
+    updateBook();
+
+    window.scrollTo(0, 0);
+  }
+
+}
+
+
+/* =========================
+   PREVIOUS
+========================= */
+
+function prevBook() {
+
+  if (currentPage > 1) {
+
+    currentPage--;
+
+    updateBook();
+
+    window.scrollTo(0, 0);
+  }
+
+}
+
+
+/* =========================
+   UPDATE BOOK
+========================= */
+
+function updateBook() {
+
+  const books =
+    document.querySelectorAll(".book");
+
+  books.forEach(function(book, index) {
+
+    if (index === currentPage - 1) {
+
+      book.style.display = "flex";
+
+    } else {
+
+      book.style.display = "none";
+
+    }
+
+  });
+
+
+  document.getElementById("pageNumber").textContent =
+    currentPage + " / " + totalPages;
+
+
+  /* Disable Previous */
+
+  document.getElementById("prevBtn").disabled =
+    currentPage === 1;
+
+
+  /* Disable Next */
+
+  document.getElementById("nextBtn").disabled =
+    currentPage === totalPages;
+
+}
+
+</script>
+
+</body>
+</html>
